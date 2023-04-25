@@ -1,0 +1,431 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+}
+.content {
+    height: 500px;
+    width: 80%;
+    border: 1px red solid;
+}
+
+.top-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    border-radius: 0px 0px 5px 5px;
+    display: flex;
+    border-bottom: 1px solid black;
+    align-items: center;
+    font-weight: bold;
+    background-color: white;
+    z-index: 1;
+}
+.logo-img{
+    position: absolute;
+    left: 3%;
+    
+}
+
+.logo-img img {
+    position: relative;
+    width: 8rem;
+}   
+
+.search-box {
+    position: absolute;
+    height: 2.5rem;
+    width: 15vw;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    left: 20vw;
+    border-radius: 10px;
+    
+}
+@media (max-width: 695px)  {
+   .search-box {display: none;}
+}
+
+.search-box:hover {
+    cursor: pointer;
+}
+.search-bar {
+    position: absolute;
+    height: 2rem;
+    width: 12vw;
+    border-radius: 10px;
+    border: none;
+    
+}
+
+.search-icon {
+    position: absolute;
+    right: -3rem;
+    top: 0.4rem;
+    width: 5rem;
+    height: 5rem;
+    background-image: url(Bilder/search.svg);
+    background-repeat: no-repeat;
+
+}
+
+.search-bar:hover {
+    cursor: pointer;
+}
+.crs-btn {
+    position: absolute;
+    left: 65vw;
+    font-size: 20px;
+    top: 1.8rem;   
+}
+
+.crs-btn:hover {
+    text-decoration: underline;
+}
+
+.dropdown:hover .triangle-pic {
+    display: none;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 0rem;
+    left: 11%;
+    width: 80%;
+    height: 30rem;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: 1.5rem;
+    z-index: 1;
+}
+
+
+
+.dropdown:hover .dropdown-content {
+    animation: fadeIn 0.2s;
+    display: block;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.dropdown-content a:hover {
+    text-decoration: underline;
+}
+
+.dropdown-textlist {
+    margin-left: 8px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.x-pic {
+    position: absolute;
+    right: 0;
+}
+
+.x-pic:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+.x-pic:active .dropdown-content {
+    background-color: black;
+}
+
+.barneskole-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.ungdomsskole-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.videregående-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.courses-button {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 25px;
+    font-size: 20px;
+    border: 0.1px solid rgb(220, 220, 220);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: 3rem;
+    margin-left: 5rem;
+}
+
+.courses-button:hover {
+    border: 2px solid green;
+}
+
+@media (max-width: 850px)  {
+    .crs-btn {display: none;}
+ }
+
+.login-btn {
+    position: absolute;
+    left: 80vw;
+    font-size: 20px;
+    top: 36%;
+    margin-right: 20px;
+}
+
+.login-btn:hover {
+    text-decoration: underline;
+}
+
+.menu {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    right: 1rem;
+    background-image: url(Bilder/align-justify.svg);
+    background-size: 3rem;
+    background-repeat: no-repeat;
+}
+.menu:hover {
+    cursor: pointer;
+}
+
+.nav-button-container {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    height: 15rem;
+    display: flex;
+    /*border: 1px solid blue;*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    left: 59vw;
+    top: 10rem;
+    color: white;
+    
+}
+#nav-button {
+    position: relative;
+    width: 14vw;
+    height: 5vw;
+    background-color: #009444;
+    border-radius: 10px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    align-content: flex-start;
+    line-height: 4rem;
+    font-size: 20px;
+
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), /* Shadow for IT and ITST boxes */
+    0 2px 4px rgba(0,0,0,0.07), 
+    0 4px 8px rgba(0,0,0,0.07), 
+    0 8px 16px rgba(0,0,0,0.07),
+    0 16px 32px rgba(0,0,0,0.07), 
+    0 32px 64px rgba(0,0,0,0.07);
+}
+
+#nav-button:hover {
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+#tbox-container {
+    /*border: 1px red solid;*/
+    top: 10rem;
+    display: flex;
+}
+
+#tbox-inner {
+    /*border: 1px red solid;*/
+    width: 50vw;
+    /*background-color: aqua;*/
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+
+}
+
+.course-img {
+    position: relative;
+    width: 43vw;
+    height: 33vw;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    left: 2rem;
+    background-color: rgb(180, 179, 179);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    
+    background-image: url("Bilder/lrn-pic.jpeg");
+    object-fit: fill;
+    background-repeat: no-repeat;
+    
+    
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), /* Shadow for IT and ITST boxes */
+    0 2px 4px rgba(0,0,0,0.07), 
+    0 4px 8px rgba(0,0,0,0.07), 
+    0 8px 16px rgba(0,0,0,0.07),
+    0 16px 32px rgba(0,0,0,0.07), 
+    0 32px 64px rgba(0,0,0,0.07);
+}
+.course-img:hover {
+    cursor: pointer;
+}
+#t-txt {
+    position: relative;
+    width: 40vw;
+    height: 19rem;
+    top: 20rem;
+    left: 5rem;
+    font-size: 1.5vw;
+    /*border: 1px solid red;*/
+    
+}
+
+
+.about-us-title {
+    width: 20vw;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #009444;
+    font-size: 3vw;
+    border-radius: 10px;
+    
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), /* Shadow for IT and ITST boxes */
+    0 2px 4px rgba(0,0,0,0.07), 
+    0 4px 8px rgba(0,0,0,0.07), 
+    0 8px 16px rgba(0,0,0,0.07),
+    0 16px 32px rgba(0,0,0,0.07), 
+    0 32px 64px rgba(0,0,0,0.07);
+}
+
+.about-us-p {
+    font-size: 1.5vw;
+}
+
+.triangle-pic {
+    position: absolute;
+    rotate: 180deg;
+    width: 1rem;
+    top: 3.5rem;
+    justify-content: center;
+    align-items: center;
+    right: 28.3rem;
+}
+
+.logo-box-fb {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.7rem;
+    height: 1.7rem;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.logo-box-fb:hover {
+    background-color: #4267B2;
+    cursor: pointer;
+}
+
+.logo-box-ig {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.7rem;
+    height: 1.7rem;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.logo-box-ig:hover {
+    cursor: pointer;
+}
+
+.logo-box-tr {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.7rem;
+    height: 1.7rem;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.logo-box-tr:hover {
+    background-color: #1DA1F2;
+    cursor: pointer;
+}
+
+.logo-list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    bottom: 3rem;
+}
+
+.instagram-colors {
+    position: absolute;
+   
+}
+.instagram-no-clrs {
+   position: absolute;
+    z-index: 1;
+}
+
+.instagram-no-clrs:hover {
+    opacity: 0;
+}
+
+.copyr-text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 2rem;
+}
+

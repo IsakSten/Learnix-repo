@@ -1,0 +1,99 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(57, 57, 57);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(50%);
+    background-image: url("Bilder/background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.login-box {
+    position: relative;
+    width: 30rem;
+    height: 25rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 19px 3px #888888;
+    
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-img {
+    position: absolute;
+    left: 2%;
+    top: 2%;
+}
+
+
+
+.username-btn {
+    margin-top: 6rem;
+    width: 17rem;
+    height: 2rem;
+    border: 1px black solid;
+    border-radius: 5px;
+    font-size: 20px;
+    border: grey 0.2px solid;
+}
+
+.username-btn:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+.host-name {
+    width: 17rem;
+    height: 2rem;
+    border: 1px black solid;
+    border-radius: 5px;
+    font-size: 20px;
+    border: grey 0.2px solid;
+}
+
+.host-name:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+.password-btn {
+    width: 17rem;
+    height: 2rem;
+    border: 1px black solid;
+    border-radius: 5px;
+    font-size: 20px;
+    border: grey 0.2px solid;
+}
+.password-btn:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+.login-btn {
+    width: 17rem;
+    height: 3rem;
+    border-radius: 5px;
+    background-color: #5cc95d;
+    bottom: 0;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.login-btn:hover {
+    cursor: pointer;
+    background-color: #7bc87c;
+
+}
+
+.register-link {
+    font-family: 'Inter', sans-serif;
+}

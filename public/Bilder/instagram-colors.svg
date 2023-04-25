@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 21.06 21">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-4 {
+        stroke-width: 2px;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="2.51" y1="19.48" x2="18.62" y2="1.52" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dc1e82"/>
+      <stop offset=".58" stop-color="#642acd" stop-opacity=".87"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="2.47" y1="19.48" x2="18.58" y2="1.52" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fcaf45"/>
+      <stop offset=".31" stop-color="#ff6432"/>
+      <stop offset=".8" stop-color="#c10000" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect class="cls-2" x=".5" y=".5" width="20" height="20" rx="5" ry="5"/>
+  <path class="cls-4" d="M14.5,9.87c.32,2.19-1.18,4.22-3.37,4.54-2.19,.32-4.22-1.18-4.54-3.37-.32-2.19,1.18-4.22,3.37-4.54,.39-.06,.78-.06,1.17,0,1.74,.26,3.11,1.63,3.37,3.37Z"/>
+  <line class="cls-4" x1="16" y1="5" x2="16.01" y2="5"/>
+  <rect class="cls-3" x=".56" y=".5" width="20" height="20" rx="5" ry="5"/>
+  <rect class="cls-1" x=".52" y=".5" width="20" height="20" rx="5" ry="5"/>
+  <path class="cls-4" d="M14.52,9.87c.32,2.19-1.18,4.22-3.37,4.54-2.19,.32-4.22-1.18-4.54-3.37-.32-2.19,1.18-4.22,3.37-4.54,.39-.06,.78-.06,1.17,0,1.74,.26,3.11,1.63,3.37,3.37Z"/>
+  <line class="cls-4" x1="16" y1="5" x2="16.01" y2="5"/>
+</svg>
